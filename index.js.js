@@ -26,6 +26,7 @@ app.put("/employeeagreement/update/:id", updateAgreement);
 app.delete("/employeeagreement/delete/:id", deleteAgreement);
 app.get("/employeeagreement/list", listAgreements);
 
-app.listen(3000, () => {
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
   console.log("Server is Running at 3000");
 });
